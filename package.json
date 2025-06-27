@@ -1,0 +1,21 @@
+{
+    "name": "selenium-mocha-digital-skola",
+    "version": "1.0.0",
+    "description": "Selenium WebDriver uji using Mocha with Mochawesome reports",
+    "scripts": {
+        "test": "mocha tests --recursive --timeout 60000",
+        "test-coba": "mocha tests/saucedemo.js --recursive --timeout 60000",
+        "test-parallel": "mocha tests --parallel --recursive --timeout 60000",
+        "test-pertama": "mocha tests --grep 'Pertama' --recursive --timeout 60000",
+        "jalanin-mochawesome": "mocha tests --recursive --timeout 60000 --reporter mochawesome",
+        "jalanin-simple-html": "mocha tests --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+    },
+    "dependencies": {
+        "selenium-webdriver": "^4.17.0"
+    },
+    "devDependencies": {
+        "mocha": "^10.4.0",
+        "mocha-simple-html-reporter": "^2.0.0",
+        "mochawesome": "^7.1.3"
+    }
+}
